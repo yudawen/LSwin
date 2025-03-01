@@ -5,7 +5,7 @@
 
   You can get the tip to use the new backbone from LSwin/build_backbone.py
 
-  # Envirenment
+  # Environment
 
   ## Create a conda virtual environment and activate it:
     conda create -n lswin python=3.7 -y
@@ -21,3 +21,25 @@
     
  ### Install other requirements:
     pip install opencv-python==4.4.0.46 termcolor==1.1.0 yacs==0.1.8 pyyaml scipy
+
+ # Example about how to use the LSwin backbone:
+    from models.LSwin_backbone import LSwin_backbone
+    import torch
+    
+    backbone=LSwin_backbone()
+    
+    # print(backbone)
+    
+    # 模拟输入数据
+    inputs = torch.randn(2, 3, 512, 512)# B × C × H × W
+    
+    # 将模型和数据移动到CPU上
+    device = torch.device("cpu")
+    backbone.to(device)
+    inputs = inputs.to(device)
+    
+    # 提取特征
+    features = backbone(inputs)
+    
+    print("Output feature size of the backbone:")
+    print(features.size())# B × C × H × W
