@@ -11,16 +11,16 @@
     conda create -n lswin python=3.7 -y
     
     conda activate lswin
-  ### Install CUDA>=10.2 with cudnn>=7 following the official installation instructions
+  ### Install CUDA>=11.1 following the official installation instructions
   
-  ### Install PyTorch>=1.8.0 and torchvision>=0.9.0 with CUDA>=10.2:
+  ### Install PyTorch>=1.11.0 and torchvision>=0.9.1 with CUDA>=11.1:
   
-    conda install pytorch==1.8.0 torchvision==0.9.0 cudatoolkit=10.2 -c pytorch
-  ### Install timm==0.4.12:
-    pip install timm==0.4.12
+    conda install pytorch==1.11.0 torchvision==0.9.1 cudatoolkit=11.1 -c pytorch
+  ### Install timm==0.6.11:
+    pip install timm==0.6.11
     
  ### Install other requirements:
-    pip install opencv-python==4.4.0.46 termcolor==1.1.0 yacs==0.1.8 pyyaml scipy
+    pip install opencv-python==4.1.2.30 termcolor==1.1.0 yacs==0.1.8 pyyaml scipy
 
  # Example about how to use the LSwin backbone:
     from models.LSwin_backbone import LSwin_backbone
