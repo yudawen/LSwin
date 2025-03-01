@@ -16,7 +16,7 @@
   ### Install PyTorch>=1.8.0 and torchvision>=0.9.0 with CUDA>=10.2:
   
     conda install pytorch==1.8.0 torchvision==0.9.0 cudatoolkit=10.2 -c pytorch
-    Install timm==0.4.12:
+  ### Install timm==0.4.12:
     pip install timm==0.4.12
     
  ### Install other requirements:
