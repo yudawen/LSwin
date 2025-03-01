@@ -8,9 +8,9 @@
   # Envirenment
 
   ## Create a conda virtual environment and activate it:
-    conda create -n swin python=3.7 -y
+    conda create -n lswin python=3.7 -y
     
-    conda activate swin
+    conda activate lswin
   ### Install CUDA>=10.2 with cudnn>=7 following the official installation instructions
   
   ### Install PyTorch>=1.8.0 and torchvision>=0.9.0 with CUDA>=10.2:
